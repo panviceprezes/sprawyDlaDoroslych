@@ -1,7 +1,12 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
 
 
 def index(request):
-    return HttpResponse("Welcom on our porno site!A!!!")
-
+    template = loader.get_template('modules/index.html')
+    context = {
+        'imie': 'Artur',
+        'nazwisko': 'Slomowski',
+        'dataUrodzenia': '1990',
+    }
+    return HttpResponse(template.render(context, request))
