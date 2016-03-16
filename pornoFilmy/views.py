@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Witamy na porno stronie")
+    return HttpResponse("Welcom on our porno site!")
