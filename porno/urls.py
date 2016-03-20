@@ -1,5 +1,4 @@
 """porno URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
 Examples:
@@ -17,6 +16,5 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^pornoFilmy/', include('pornoFilmy.urls')),
-    url(r'^admin/', admin.site.urls),
+    url(r'^', include('__index.urls'))
 ]
