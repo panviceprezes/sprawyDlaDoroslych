@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    '__index'
+    '__index',
+    '__main'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -56,7 +57,8 @@ ROOT_URLCONF = 'porno.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(BASE_DIR, "__index"),],
+        'DIRS': [ os.path.join(BASE_DIR, "__index"),
+                  os.path.join(BASE_DIR, "__main" ),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
