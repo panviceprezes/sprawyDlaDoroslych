@@ -5,7 +5,7 @@ from pydash.collections import find
 
 
 def index(request):
-	template = loader.get_template('public/index.html')
+	template = loader.get_template('__index/public/index.html')
 	context = {
 		'imie': 'Artur',
 		'nazwisko': 'Slomowski',

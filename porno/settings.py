@@ -57,8 +57,7 @@ ROOT_URLCONF = 'porno.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(BASE_DIR, "__index"),
-                  os.path.join(BASE_DIR, "__main" ),],
+        'DIRS': [ os.path.join(BASE_DIR)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
